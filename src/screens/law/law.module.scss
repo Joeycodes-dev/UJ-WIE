@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.mainLaw{
+
+    font-family: 'Poppins', sans-serif;
+
+    .lawHeader{
+        margin-top: 4%;
+        position: relative;
+
+        img{
+            width: 100%;
+            height: 40vh;
+            border-radius: 5px;
+            object-fit: cover;
+
+        }
+        .mainText{
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            color: white;
+
+            .spanText{
+
+                color: brown;
+
+            }
+
+            .spanTextToo{
+                color: purple;
+            }
+        }
+
+    }
+    .vidWrapper{
+
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 20% 80%;
+
+        .hoverlist{
+
+            margin-top: 15%;
+            line-height: 2rem;
+
+            ul{
+                .upArrow{
+                    background-image: url('../../assets/upArrow.png');
+                    background-repeat: no-repeat;
+                    background-position: left;
+                }
+
+                li{
+
+                    border-bottom: 2px solid #c7c7c7;
+                    max-width: 10rem;
+
+                    a{
+
+                        text-decoration: none;
+                        padding-left: 1rem;
+                        color: #000000;
+                    }
+                    .active{
+                        font-weight: bolder;
+                    }
+                
+                }
+              
+     
+            }
+            
+        }
+        .landingOne{
+                
+            .firstHeading{
+                background-image: url('../../assets/TitleArrows.png');
+                background-repeat: no-repeat;
+                background-position: left;
+               
+                h2{
+                    border-bottom: 2px solid #c7c7c7;
+                    max-width: 30rem;
+                    padding-left: 2rem;
+                }
+               
+            }
+            .welcomeVid{
+                display: flex;
+                justify-content: center;
+                margin: 4rem auto;
+            }
+            p{
+                line-height: 2rem;
+                margin: 4rem auto;
+            }
+        }
+        
+        .video{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            margin: 4rem auto;
+            background-color: lightslategrey;
+            border-radius: 2rem;
+            
+            .vidHeading{
+                padding-left: 4rem;
+
+                .vidIcon{
+
+                    display: flex;
+                    a{
+                        text-decoration: none;
+                        color: #000000;
+                    }    
+
+                    .icon{
+                        
+                        margin-top: 5.5%;
+                        margin-right: 2%;
+                        
+                    }
+
+                }
+
+            }
+            .vidElement{
+                padding: 2rem;
+                margin: auto;
+                
+            }
+
+        }
+
+    }
+
+}
+
+
+/*VIewports for responsiveness*/
+
+
+@media only screen and (max-width:750px){
+
+    .mainLaw{
+    
+        .lawHeader{
+               
+        }
+        .vidWrapper{
+    
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: 100%;
+            padding: .6rem;
+    
+            .hoverlist{
+    
+    
+                ul{
+                    .upArrow{
+    
+                    
+                    }
+    
+                    li{
+    
+                   
+    
+                        a{
+    
+                           
+                        }
+                    }
+         
+                }
+                
+            }
+            .landingOne{
+                    
+                .firstHeading{
+             
+                   
+                    h2{
+                      
+                    }
+                   
+                }
+                .welcomeVid{
+             
+                }
+                p{
+                  
+                }
+            }
+            
+            .video{
+                display: grid;
+                grid-template-columns: 100%;
+                .vidHeading{
+        
+    
+                    .vidIcon{
+    
+                    
+                        a{
+              
+                        }    
+    
+                        .icon{
+                            
+                 
+                        }
+    
+                    }
+    
+                }
+                .vidElement{
+                    width: fit-content;
+                    padding: 2rem;
+                    margin: auto;
+                    
+                }
+    
+            }
+    
+        }
+    
+    }
+  }

@@ -1,0 +1,252 @@
+
+/*single*/
+
+.single{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 2rem;
+  grid-gap: 3rem;
+}
+
+.singlePostImg {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.singlePostTitle {
+  text-align: center;
+  margin: 10px;
+  font-size: 28px;
+  font-family: "Lora", sans-serif;
+}
+
+.singlePostEdit {
+  text-align: center;
+}
+
+.singlePostIcon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+  color: teal;
+}
+.singlePostIcon:last-child {
+  color: tomato;
+}
+
+.singlePostInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #F26522;
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+}
+
+.singlePostAuthor{
+  margin-left: 5px;
+}
+
+.singlePostDesc {
+  color: #666;
+  font-size: 18px;
+  line-height: 25px;
+  white-space: pre-wrap;
+}
+
+.singlePostDesc::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/*sidebar*/
+
+.sidebar {
+  
+  margin: 1.2rem;
+  margin-top: 7rem;
+  padding-bottom: 2rem;
+  background-color: #fdfbfb;
+  border-radius: .8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .sidebarTitle {
+  margin: 10px;
+  padding: 5px;
+  width: 80%;
+  border-top: solid 1px #a7a4a4;
+  border-bottom: solid 1px #a7a4a4;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  line-height: 19px;
+  color: #222222;
+  font-weight: 600;
+}
+
+.sidebar .post-content .post-image .post-info{
+  position: relative;
+  padding: 0.4rem 0.1rem ;
+  width: 60%;
+  bottom: 1.2rem ;
+  left: .5rem ;
+  border-radius: 0rem ;
+  background: #666 ;
+  justify-content: space-around;
+}
+.sidebar .post-content .post-image .post-info span{
+  color: #fdfbfb;
+}
+
+.sidebar .post-content .post-title a{
+  font-family:'Roboto', sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.sidebar .post-content .post-title p{
+  line-height: 1.2rem;
+}
+
+
+/*VIewports for responsiveness*/
+
+
+@media only screen and (max-width:750px){
+
+  
+.single{
+  display: block;
+}
+
+.singlePostWrapper {
+  margin: 1rem;
+}
+
+
+}
+
+/*Comments*/
+
+.toggle_comments{
+  display: none;
+}
+.show_comments{
+  display: block;
+}
+
+.comment > h5 {
+	background: rgba(38, 0, 128, 0.226);
+	font-size: .7rem;
+	padding: .2rem .4rem;
+	color: rgba(0, 11, 43, 0.534);
+	border-radius: .25rem;
+  }
+  
+  .comment > p {
+	font-size: .9rem;
+	font-weight: 500;
+	padding-left: .8rem;
+  }
+  
+  .comment{
+	display: flex;
+	align-items: center;
+  }
+ 
+  .comment-icon{ 
+    display: inline-flex;
+
+
+  }
+
+  .love-icon{ 
+    display: inline-flex;
+    position: sticky;
+    bottom: 4rem;
+    left: 65rem;
+    border: 2px black solid;
+  }
+
+  .comment-icon:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  .love-icon:hover{
+    cursor: pointer;
+    background: red;
+    transform: scale(1.2);
+  }
+/*
+
+.sidebarItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebarTitle {
+  margin: 10px;
+  padding: 5px;
+  width: 80%;
+  border-top: solid 1px #a7a4a4;
+  border-bottom: solid 1px #a7a4a4;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  line-height: 19px;
+  color: #222222;
+  font-weight: 600;
+}
+
+.sidebarItem > img {
+  margin-top: 15px;
+  width: 250px;
+  height: 250px;
+}
+
+.sidebarItem > p {
+  padding: 30px;
+  line-height: 1rem;
+}
+
+.sidebarList {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.sidebarListItem {
+  display: inline-block;
+  width: 50%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.sidebarSocial {
+  margin-top: 15px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebarIcon {
+  font-size: 16px;
+  margin-left: 10px;
+}
+*/
+
+
+
+
+
+
+

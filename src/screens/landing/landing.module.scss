@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+
+.container{
+
+    font-family: 'Poppins', sans-serif;
+
+    .mainHeader{
+        
+        margin-top: 5%;
+        position: relative;
+
+        img{
+
+            width: 100%;
+            height: 40vh;
+            object-fit: cover;
+
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: rgba(0,0,0,.4);
+        }
+        .mainText{
+
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            transform: translateX(-50%); 
+            transform: translateY(-50%); 
+            color: rgb(255, 184, 117);
+
+            p{
+                font-family: 'Concert One', cursive;
+                font-size: 2rem;
+            }
+        }
+        
+    }
+    .mainContent{
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 20% 80%;
+
+        .hoverlist{
+            margin-top: 15%;
+            line-height: 2rem;
+            position: -webkit-sticky;
+
+            ul{
+                .upArrow{
+                    background-image: url('../../assets/upArrow.png');
+                    background-repeat: no-repeat;
+                    background-position: left;
+                }
+
+                li{
+                    border-bottom: 2px solid #c7c7c7;
+                    max-width: 10rem;
+
+                    a{
+                        text-decoration: none;
+                        padding-left: 1rem;
+                        color: #000000;
+                    }
+                    .active{
+                        font-weight: bolder;
+                    }
+                }
+     
+            }
+            
+        }
+        .landingContent{
+
+            .landingOne{
+                
+                .firstHeading{
+                    background-image: url('../../assets/TitleArrows.png');
+                    background-repeat: no-repeat;
+                    background-position: left;
+                   
+                    h2{
+                        border-bottom: 2px solid #c7c7c7;
+                        max-width: 24rem;
+                        padding-left: 2rem;
+                    }
+                   
+                }
+                .welcomeVid{
+                    display: flex;
+                    justify-content: center;
+                    margin: 4rem auto;
+                }
+                p{
+                    line-height: 2rem;
+                    padding-right: 2rem;
+                }
+            }
+            .video{
+                display: grid;
+                grid-template-columns: 40% 60%;
+                
+                .vidHeading{
+                    padding-left: 4rem;
+
+                    .vidIcon{
+
+                        display: flex;
+
+                        a{
+                            text-decoration: none;
+                            color: #000000;
+                        }    
+
+                        .icon{
+                            
+                            margin-top: 5.5%;
+                            margin-right: 2%;
+                            
+                        }
+
+                    }
+
+                }
+                .vidElement{
+                    padding: 2rem;
+                    margin: auto;
+                    
+                }
+
+            }
+        }
+        
+    }
+    .active{
+        font-weight: bolder;
+
+    }
+    .moreinfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10%;
+        .sponsors{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 3%;
+            .img{
+                height: 200px;
+                width: 350px;
+            }
+            .img2{
+                height: 200px;
+                width: 500px;
+            }
+            img{
+                height: 200px;
+                width: 250px;
+                padding: 2rem;
+            }
+        }
+
+
+    }
+}
+
+
+
+/*VIewports for responsiveness*/
+
+
+@media only screen and (max-width:750px){
+
+    .mainHeader{
+        
+        margin-top: 5%;
+        position: relative;
+
+        img{
+
+            width: 100%;
+            height: 40vh;
+            object-fit: cover;
+
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: rgba(0,0,0,.4);
+        }
+        .mainText{
+
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            transform: translateX(-50%); 
+            transform: translateY(-50%); 
+            color: rgb(255, 184, 117);
+
+            p{
+                font-family: 'Concert One', cursive;
+                font-size: 2rem;
+            }
+        }
+        
+    }
+    .mainContent{
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 100% !important;
+        padding: .6rem;
+
+        .hoverlist{
+            margin-top: 15%;
+            line-height: 2rem;
+            position: -webkit-sticky;
+
+            ul{
+                .upArrow{
+                    background-image: url('../../assets/upArrow.png');
+                    background-repeat: no-repeat;
+                    background-position: left;
+                }
+
+                li{
+                    border-bottom: 2px solid #c7c7c7;
+                    max-width: 10rem;
+
+                    a{
+                        text-decoration: none;
+                        padding-left: 1rem;
+                        color: #000000;
+                    }
+                }
+     
+            }
+            
+        }
+        .landingContent{
+
+            .landingOne{
+                
+                .firstHeading{
+                    background-image: url('../../assets/TitleArrows.png');
+                    background-repeat: no-repeat;
+                    background-position: left;
+                   
+                    h2{
+                        border-bottom: 2px solid #c7c7c7;
+                        max-width: 24rem;
+                        padding-left: 2rem;
+                    }
+                   
+                }
+                .welcomeVid{
+                    display: flex;
+                    justify-content: center;
+                    margin: 4rem auto;
+                }
+                p{
+                    line-height: 2rem;
+                    padding-right: 2rem;
+                }
+            }
+            .video{
+                display: grid;
+                grid-template-columns: 100% !important;
+                
+                .vidHeading{
+                    padding-left: 4rem;
+
+                    .vidIcon{
+
+                        display: flex;
+
+                        a{
+                            text-decoration: none;
+                            color: #000000;
+                        }    
+
+                        .icon{
+                            
+                            margin-top: 5.5%;
+                            margin-right: 2%;
+                            
+                        }
+
+                    }
+
+                }
+                .vidElement{
+                    
+                    width: 100% !important;
+                    .reactPLayer{
+                        height: 50%;
+                        width: 100% !important;
+                    }
+                    
+                }
+
+            }
+        }
+        
+    }
+    .active{
+        font-weight: bolder;
+
+    }
+    .moreinfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10%;
+        .sponsors{
+            display: flex;
+            flex-direction: column !important;
+            align-items: center;
+            justify-content: center;
+            padding: 3% 2rem 0;
+            .img{
+                height: 50% !important;
+                width: 100% !important;
+            }
+            .img2{
+                height: 100% !important;
+                width: 100% !important;
+            }
+            img{
+                width: 100% !important;
+            }
+        }
+
+
+    }
+
+}
