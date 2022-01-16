@@ -86,7 +86,7 @@ export default function Landing() {
                   </p>
                 </div>
                 <div className={style.vidElement}>
-                  <img src={playPart} alt="storytelling" className={style.reactPLayer} width="600px" height="300px"/>
+                  <img src={playPart} alt="storytelling" className={style.reactPLayer} width="500px" height="300px"/>
                 </div>
               </div>
 

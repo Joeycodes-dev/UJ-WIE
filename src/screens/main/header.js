@@ -42,14 +42,14 @@ export default function Header() {
                                 Home
                             </Link>
                         </li>
-                        <li className="nav-link">
+                        <li className="nav-link menu-toggle">
                             <Link>
                                 Faculties
                             </Link>
                             <div className="sub-menu">
                                 <ul>
                                 <li><Link to={'/prBlog'}>Humanities</Link></li>
-                                <li><Link to={'/social'}>Social Work</Link></li>
+                                <li><Link to={'/social'}>Social</Link></li>
                                 <li><Link to={'/lawBlog'}>Law</Link></li>
                                 </ul>
                             </div>

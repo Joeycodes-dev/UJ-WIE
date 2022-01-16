@@ -1,69 +1,93 @@
 .nav{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    // position: fixed;
+    .navlogo{
+        margin: 0 500px 0 0;
+        img{
+            z-index: 1000000;
+        }
+    }
+    .togglecollapse{
+        position: absolute;
+        top: 0%;
+        width: 90%;
+        cursor: pointer;
+        // display: none;
+        .toggleicons{
+            display: flex;
+            justify-content: flex-end;
+            padding: 2rem 1rem;
+        }
+    }
+    .navitems{
+        padding: 0 20px;
+        list-style:none;
+        text-decoration: none;
+        .items{
+            margin: 20px;
+            display: flex;
+            padding: 0 20px;
+            li{
+                margin: 0 10px;
+                padding: 5px 20px;
+                border: orange 1px solid;
+                border-radius: 20px;
+                list-style:none;
+                position:relative;
 
-    background: #ffffff;
-    padding: 0 2rem;
-    height: 4.25rem;
-    transition: height 1s ease-in-out;
-    
-    .nav-menu{
-        justify-content: space-between;
-
+            }
+            li:hover{
+                background-color: orange;
+                color: white;
+            }
+            .menu:hover{
+                .submenu{
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    left: 10px;
+                    top: 32px;
+                    z-index: 1000;
+                    padding: 5px;
+                    background-color: rgb(197, 197, 197);
+                    li{
+                        margin: 2px ;
+                        padding: 5px;
+                        border: none;
+                        border-radius: 0px;
+                        list-style:none;
+                        position:relative;
         
-        .toggle-collapse{
-
-            position: absolute;
-            top: 0%;
-            width: 90%;
-            cursor: pointer;
-            display: none;
-
-            .toggle-icons{
-                display: flex;
-                justify-content: flex-end;
-                padding: 2rem 1rem;
+                    }
+    
+                    // display: none;
+                }
             }
-
+            .submenu{
+    
+                display: none;
+            }
         }
 
-        .nav-items{
+    }
+}
 
+@media only screen and (max-width:750px){
+	
+	.nav{
+		overflow: hidden;
+        height: 60px;
+        .navitems{
             ul{
-                list-style-type: none;
-                display: block;
-                list-style-type: disc;
-                margin-block-start: 1em;
-                margin-block-end: 1em;
-                margin-inline-start: 0px;
-                margin-inline-end: 0px;
-                padding-inline-start: 40px;
-
-                a{
-                    margin: auto;
-	                display: block;
-                    text-decoration: none;
-                    color: black;
-	                padding: .9rem 1.5rem;
-                }
-                a:hover{
-                    background-color: #f18d13;
-	                color: white;
-                }
-                .nav-link{
-                    font-size: 1.1rem;
-                    position: relative;
-                    font-family: 'Roboto', sans-serif;
-                }
-                
+                padding-top: 100px;
+                flex-direction: column;
             }
-
         }
+	}
+    .toggle-collapse{
+        display: initial;
     }
 
-    .row{
-        display: flex;
-	    flex-wrap: wrap;
-    }
-    .collapse{
-        height:30rem;
-    }
 }
